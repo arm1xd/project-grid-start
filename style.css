@@ -1,0 +1,26 @@
+.container { 
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "section section nav"
+     "footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+.container > div {
+    height: 50px;
+    background: gray;
+    margin:7px;
+  }
+  #section {
+      grid-area: section;
+  }
+  #footer{
+ grid-area: footer;
+  }
+  #nav {
+      grid-area: nav;
+  }
+  #header {
+      grid-area:header;
+  }
